@@ -277,6 +277,7 @@ rtp:prepend(lazypath)
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup {
   spec = {
+    { import = 'kickstart.plugins' },
     { import = 'custom.plugins' },
 
     -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
