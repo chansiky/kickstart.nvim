@@ -277,8 +277,14 @@ rtp:prepend(lazypath)
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup {
   spec = {
-    { import = 'kickstart.plugins' },
-    { import = 'custom.plugins' },
+    -- <config "LazyVim">
+    -- add LazyVim and import its plugins
+    { 'LazyVim/LazyVim', import = 'lazyvim.plugins' },
+    -- { import = 'lazyvimoverride.plugins' },
+    -- </config "LazyVim">
+
+    -- { import = 'kickstart.plugins' },
+    -- { import = 'custom.plugins' },
 
     -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
     -- init.lua. If you want these files, they are in the repository, so you can just download them and
