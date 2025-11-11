@@ -1,6 +1,8 @@
 return {
   {
     'inkarkat/vim-mark',
+    enabled = false,
+    event = 'VeryLazy',
     keys = {
       {
         '<leader>j.',

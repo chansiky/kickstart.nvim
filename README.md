@@ -239,3 +239,10 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
 
+
+### LazyVim installation
+
+```
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+```
