@@ -285,13 +285,15 @@ require('lazy').setup {
   spec = {
     -- <config "LazyVim">
     -- add LazyVim and import its plugins
-    { 'LazyVim/LazyVim', import = 'lazyvim.plugins' },
+    -- { 'LazyVim/LazyVim', import = 'lazyvim.plugins' },
     -- { import = 'lazyvimoverride.plugins' },
-    { import = 'lazyvimcustom.plugins' },
+    -- { import = 'lazyvimcustom.plugins' },
     -- </config "LazyVim">
 
-    -- { import = 'kickstart.plugins' },
-    -- { import = 'custom.plugins' },
+    -- <config "kickstart">
+    { import = 'kickstart.plugins' },
+    { import = 'custom.plugins' },
+    -- </config "kickstart">
 
     -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
     -- init.lua. If you want these files, they are in the repository, so you can just download them and
