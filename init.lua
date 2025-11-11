@@ -229,6 +229,12 @@ vim.keymap.set('n', '<leader>tx', ':tabclose<CR>', { desc = 'Close tab' })
 vim.keymap.set('n', '<leader>ton', ':tabonly<CR>', { desc = 'Make this only tab open' })
 -- </config>
 
+-- <config "replace default heavily used ctrl keymaps">
+vim.keymap.set('n', '<leader>dd', '<C-d>', { desc = 'Down' })
+vim.keymap.set('n', '<leader>uu', '<C-u>', { desc = 'Up' })
+vim.keymap.set('n', '<leader>ex', ':Ex<CR>', { desc = 'Explore' })
+-- </config>
+
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
 -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
@@ -281,6 +287,7 @@ require('lazy').setup {
     -- add LazyVim and import its plugins
     { 'LazyVim/LazyVim', import = 'lazyvim.plugins' },
     -- { import = 'lazyvimoverride.plugins' },
+    { import = 'lazyvimcustom.plugins' },
     -- </config "LazyVim">
 
     -- { import = 'kickstart.plugins' },
