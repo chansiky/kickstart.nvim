@@ -219,6 +219,8 @@ vim.keymap.set('n', '<leader>wxk', '<C-w>k :close<CR>', { desc = 'Close the wind
 vim.keymap.set('n', '<leader>ws', '<C-w>s', { desc = 'Split window horizontally' })
 vim.keymap.set('n', '<leader>wv', '<C-w>v', { desc = 'Split window vertically' })
 --   </option "close neighboring window using leader">
+
+vim.keymap.set('n', '<leader>w=', '<C-w>=', { desc = 'Equalize window sizes' })
 -- </config "window management">
 
 -- <config "tag management">
