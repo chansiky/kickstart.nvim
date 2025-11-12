@@ -24,6 +24,7 @@ vim.o.mouse = 'a'
 
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
+vim.o.laststatus = 2
 
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
@@ -138,6 +139,7 @@ vim.keymap.set('n', '<leader>wxh', '<C-w>h :close<CR>', { desc = 'Close the wind
 vim.keymap.set('n', '<leader>wxl', '<C-w>l :close<CR>', { desc = 'Close the window to right' })
 vim.keymap.set('n', '<leader>wxj', '<C-w>j :close<CR>', { desc = 'Close the window to bottom' })
 vim.keymap.set('n', '<leader>wxk', '<C-w>k :close<CR>', { desc = 'Close the window to top' })
+vim.keymap.set('n', '<leader>wxx', ':close<CR>', { desc = 'Close the current window' })
 --   </option "close neighboring window using leader">
 
 --   <option "close neighboring window using leader">
