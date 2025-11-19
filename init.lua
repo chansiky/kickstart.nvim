@@ -130,14 +130,9 @@ rtp:prepend(lazypath)
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup {
   spec = {
-    -- <config "styles">
-    { 'ellisonleao/gruvbox.nvim' },
-    { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
-    -- </config "styles">
-
     -- <config "LazyVim">
     -- add LazyVim and import its plugins
-    { 'LazyVim/LazyVim', import = 'lazyvim.plugins', opts = { colorscheme = 'catppuccin-frappe' } },
+    { 'LazyVim/LazyVim', import = 'lazyvim.plugins', opts = { colorscheme = 'github_dark_dimmed' } },
     { import = 'plugins' },
     -- </config "LazyVim">
 
