@@ -132,7 +132,7 @@ require('lazy').setup {
   spec = {
     -- <config "LazyVim">
     -- add LazyVim and import its plugins
-    { 'LazyVim/LazyVim', import = 'lazyvim.plugins', opts = { colorscheme = 'github_dark_dimmed' } },
+    { 'LazyVim/LazyVim', import = 'lazyvim.plugins', opts = { colorscheme = 'eldritch' } },
     { import = 'plugins' },
     -- </config "LazyVim">
 
