@@ -17,4 +17,9 @@ return {
     'windwp/nvim-ts-autotag',
     enabled = false,
   },
+
+  {
+    'folke/persistence.nvim',
+    enabled = false,
+  },
 }

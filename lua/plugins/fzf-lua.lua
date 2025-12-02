@@ -2,6 +2,11 @@ return {
   {
     'ibhagwan/fzf-lua',
     cmd = 'FzfLua',
+    fzf_colors = {
+      true,
+      bg = '-1',
+      gutter = '-1',
+    },
     opts = function(_, opts)
       local fzf = require 'fzf-lua'
       local config = fzf.config

@@ -92,6 +92,12 @@ return {
   },
 
   {
+    'ellisonleao/gruvbox.nvim',
+    priority = 1000,
+    config = true,
+  },
+
+  {
     'eldritch-theme/eldritch.nvim',
     priority = 1000, -- make sure to load this before all the other start plugins
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
