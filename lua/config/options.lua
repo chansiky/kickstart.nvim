@@ -84,9 +84,13 @@ vim.o.confirm = true
 
 -- vim.opt.smoothscroll = false
 
+-- <config "folke/snacks">
 -- <config "disable all animations">
 vim.g.snacks_animate = false
 -- </config "disable all animations">
+vim.g.snacks_dim = false
+vim.g.snacks_indent = false
+-- <config>
 
 -- <config "this will make markdown not hide fenced codeblock tickmarks("```")">
 vim.opt.conceallevel = 0
@@ -99,7 +103,7 @@ vim.keymap.set('n', '<leader>;', ':', { desc = 'Command-line mode' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+-- vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
@@ -163,8 +167,9 @@ vim.keymap.set('n', '<leader>ton', ':tabonly<CR>', { desc = 'Make this only tab 
 -- <config "replace default heavily used ctrl keymaps">
 vim.keymap.set('n', '<leader>dd', '<C-d>', { desc = 'Down' })
 vim.keymap.set('n', '<leader>uu', '<C-u>', { desc = 'Up' })
-vim.keymap.set('n', '<leader>ex', ':Ex<CR>', { desc = 'Explore' })
 -- </config>
+
+vim.keymap.set('n', '<leader>ex', ':Ex<CR>', { desc = 'Explore' })
 
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })

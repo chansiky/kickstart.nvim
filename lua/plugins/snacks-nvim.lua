@@ -3,6 +3,7 @@ return {
     'snacks.nvim',
     opts = {
       indent = { enabled = true },
+      dim = { enabled = false },
       input = { enabled = true },
       notifier = { enabled = true },
       scope = { enabled = true },
