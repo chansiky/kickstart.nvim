@@ -82,6 +82,10 @@ vim.o.scrolloff = 5
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- <disable "spelling">
+vim.opt.spell = false
+-- </disable "spelling">
+
 -- vim.opt.smoothscroll = false
 
 -- <config "folke/snacks">
