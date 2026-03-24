@@ -53,7 +53,7 @@ return {
     end, desc = "Notification History" },
     { "<leader>un", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
     -- disable the keymap to open explorer
-    {"<leader>e", false},
+    -- {"<leader>e", false},
   },
   },
 }

@@ -141,26 +141,26 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 -- vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 --   </option "main">
 --   <option "focus window using leader">
-vim.keymap.set('n', '<leader>wh', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', '<leader>wl', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-vim.keymap.set('n', '<leader>wj', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<leader>wk', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+-- vim.keymap.set('n', '<leader>wh', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+-- vim.keymap.set('n', '<leader>wl', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+-- vim.keymap.set('n', '<leader>wj', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+-- vim.keymap.set('n', '<leader>wk', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 --   </option "focus window using leader">
 
 --   <option "close neighboring window using leader">
-vim.keymap.set('n', '<leader>wxh', '<C-w>h :close<CR>', { desc = 'Close the window to left' })
-vim.keymap.set('n', '<leader>wxl', '<C-w>l :close<CR>', { desc = 'Close the window to right' })
-vim.keymap.set('n', '<leader>wxj', '<C-w>j :close<CR>', { desc = 'Close the window to bottom' })
-vim.keymap.set('n', '<leader>wxk', '<C-w>k :close<CR>', { desc = 'Close the window to top' })
-vim.keymap.set('n', '<leader>wxx', ':close<CR>', { desc = 'Close the current window' })
+-- vim.keymap.set('n', '<leader>wxh', '<C-w>h :close<CR>', { desc = 'Close the window to left' })
+-- vim.keymap.set('n', '<leader>wxl', '<C-w>l :close<CR>', { desc = 'Close the window to right' })
+-- vim.keymap.set('n', '<leader>wxj', '<C-w>j :close<CR>', { desc = 'Close the window to bottom' })
+-- vim.keymap.set('n', '<leader>wxk', '<C-w>k :close<CR>', { desc = 'Close the window to top' })
+-- vim.keymap.set('n', '<leader>wxx', ':close<CR>', { desc = 'Close the current window' })
 --   </option "close neighboring window using leader">
 
 --   <option "close neighboring window using leader">
-vim.keymap.set('n', '<leader>ws', '<C-w>s', { desc = 'Split window horizontally' })
-vim.keymap.set('n', '<leader>wv', '<C-w>v', { desc = 'Split window vertically' })
+-- vim.keymap.set('n', '<leader>ws', '<C-w>s', { desc = 'Split window horizontally' })
+-- vim.keymap.set('n', '<leader>wv', '<C-w>v', { desc = 'Split window vertically' })
 --   </option "close neighboring window using leader">
 
-vim.keymap.set('n', '<leader>w=', '<C-w>=', { desc = 'Equalize window sizes' })
+-- vim.keymap.set('n', '<leader>w=', '<C-w>=', { desc = 'Equalize window sizes' })
 -- </config "window management">
 
 -- <config "tag management">
@@ -172,11 +172,11 @@ vim.keymap.set('n', '<leader>ton', ':tabonly<CR>', { desc = 'Make this only tab 
 -- </config>
 
 -- <config "replace default heavily used ctrl keymaps">
-vim.keymap.set('n', '<leader>dd', '<C-d>', { desc = 'Down' })
-vim.keymap.set('n', '<leader>uu', '<C-u>', { desc = 'Up' })
+-- vim.keymap.set('n', '<leader>dd', '<C-d>', { desc = 'Down' })
+-- vim.keymap.set('n', '<leader>uu', '<C-u>', { desc = 'Up' })
 -- </config>
 
-vim.keymap.set('n', '<leader>ex', ':Ex<CR>', { desc = 'Explore' })
+-- vim.keymap.set('n', '<leader>ex', ':Ex<CR>', { desc = 'Explore' })
 
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
