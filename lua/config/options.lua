@@ -147,12 +147,22 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 -- vim.keymap.set('n', '<leader>wk', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 --   </option "focus window using leader">
 
+--   <option "terminal window motions set to default <C-w>X format">
+vim.keymap.set('t', '<C-w>', '<Nop>', { silent = true })
+
+vim.keymap.set('t', '<C-w>h', '<C-\\><C-n><C-w>h', { silent = true })
+vim.keymap.set('t', '<C-w>j', '<C-\\><C-n><C-w>j', { silent = true })
+vim.keymap.set('t', '<C-w>k', '<C-\\><C-n><C-w>k', { silent = true })
+vim.keymap.set('t', '<C-w>l', '<C-\\><C-n><C-w>l', { silent = true })
+--   </option "terminal window motions set to default <C-w>X format">
+
 --   <option "close neighboring window using leader">
 -- vim.keymap.set('n', '<leader>wxh', '<C-w>h :close<CR>', { desc = 'Close the window to left' })
 -- vim.keymap.set('n', '<leader>wxl', '<C-w>l :close<CR>', { desc = 'Close the window to right' })
 -- vim.keymap.set('n', '<leader>wxj', '<C-w>j :close<CR>', { desc = 'Close the window to bottom' })
 -- vim.keymap.set('n', '<leader>wxk', '<C-w>k :close<CR>', { desc = 'Close the window to top' })
 -- vim.keymap.set('n', '<leader>wxx', ':close<CR>', { desc = 'Close the current window' })
+vim.keymap.set('n', '<C-w>x', ':close<CR>', { desc = 'Close the current window' })
 --   </option "close neighboring window using leader">
 
 --   <option "close neighboring window using leader">
