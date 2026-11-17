@@ -52,6 +52,19 @@ return {
       end
     end, desc = "Notification History" },
     { "<leader>un", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
+    { "<leader>fm", function()
+      Snacks.picker.files({
+        title = "Files by mtime",
+        transform = function(item)
+          -- resolve against the picker's cwd so this works even when it differs from nvim's cwd
+          local path = Snacks.picker.util.path(item)
+          local stat = path and vim.uv.fs_stat(path)
+          item.mtime = stat and stat.mtime.sec or 0
+        end,
+        sort = { fields = { "mtime:desc" } },
+        matcher = { sort_empty = true }, -- apply the sort before you type anything
+      })
+    end, desc = "Files by Modified Time" },
     -- disable the keymap to open explorer
     -- {"<leader>e", false},
   },
